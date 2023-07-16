@@ -6,17 +6,23 @@ export default function Contact() {
   const [message, setMessage] = useState('');
   const [isNameRequired, setIsNameRequired] = useState(false);
   const [isEmailValid, setIsEmailValid] = useState(true);
+  const [isMessageRequired, setIsMessageRequired] = useState(false);
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    if (name === '') {
+    if (name.trim() === '') {
       setIsNameRequired(true);
       return;
     }
 
     if (!validateEmail(email)) {
       setIsEmailValid(false);
+      return;
+    }
+
+    if (message.trim() === '') {
+      setIsMessageRequired(true);
       return;
     }
 
@@ -29,6 +35,7 @@ export default function Contact() {
     setMessage('');
     setIsNameRequired(false);
     setIsEmailValid(true);
+    setIsMessageRequired(false);
   };
 
   const validateEmail = (email) => {
@@ -37,9 +44,9 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div className="contact-container">
       <h2>Contact</h2>
-      <form onSubmit={handleFormSubmit}>
+      <form className="contact-form" onSubmit={handleFormSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -69,6 +76,7 @@ export default function Contact() {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
+          {isMessageRequired && <span className="error-message">Message is required</span>}
         </div>
 
         <button type="submit">Submit</button>
@@ -76,3 +84,4 @@ export default function Contact() {
     </div>
   );
 }
+

@@ -7,7 +7,7 @@ export default function Resume() {
       <p>
         <a href="resume.pdf" download>Download my resume</a>
       </p>
-      <h3>Front-end Proficiencies</h3>
+      <h4>Front-end Proficiencies</h4>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -18,15 +18,13 @@ export default function Resume() {
         <li>Bootstrap</li>
       </ul>
 
-      <h3>Back-end Proficiencies</h3>
+      <h4>Back-end Proficiencies</h4>
       <ul>
         <li>APIs</li>
         <li>Node</li>
         <li>Express</li>
         <li>MySQL, Sequelize</li>
         <li>MongoDB, Mongoose</li>
-        <li>Rest</li>
-        <li>GraphQL</li>
       </ul>
     </div>
   );
