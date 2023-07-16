@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <h2>About Me</h2>
       <div>
-        <img src="icon.jpg" alt="icon" />
+        <img src="https://cdn-icons-png.flaticon.com/128/552/552721.png" alt="icon" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit dolore quibusdam sequi rerum
           repudiandae quia, illum magnam cumque odit itaque sint obcaecati hic eveniet dolorum provident maiores
