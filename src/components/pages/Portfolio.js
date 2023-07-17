@@ -7,7 +7,7 @@ export default function Portfolio() {
       <div className="portfolio-container">
         <a href="https://thecolorhieu.github.io/Quotes-of-Thrones/" className="portfolio-item picQoT">
           <div>
-            <h3>Quotes of Thrones</h3>
+            <h3>Quote of Thrones</h3>
             <span>Project 1</span>
           </div>
         </a>

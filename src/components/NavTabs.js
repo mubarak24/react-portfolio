@@ -3,9 +3,10 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header>
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center justify-content-between">
         <h2>Mubarak24</h2>
-        <ul className="nav nav-tabs ml-4">
+        <ul className="nav nav-tabs">
+          {/* About Me tab */}
           <li className="nav-item">
             <a
               href="#about"
@@ -15,6 +16,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               About Me
             </a>
           </li>
+          {/* Portfolio tab */}
           <li className="nav-item">
             <a
               href="#portfolio"
@@ -24,6 +26,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               Portfolio
             </a>
           </li>
+          {/* Contact tab */}
           <li className="nav-item">
             <a
               href="#contact"
@@ -33,6 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               Contact
             </a>
           </li>
+          {/* Resume tab */}
           <li className="nav-item">
             <a
               href="#resume"
