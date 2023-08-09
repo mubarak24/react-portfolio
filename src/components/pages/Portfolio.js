@@ -19,6 +19,13 @@ export default function Portfolio() {
           </div>
         </a>
 
+        <a href="https://fast-brook-59696-a40083fa7f53.herokuapp.com/" className="portfolio-item picJJ">
+          <div>
+            <h3>Jolly Journal</h3>
+            <span>Project 3</span>
+          </div>
+        </a>
+
       </div>
     </div>
   );
